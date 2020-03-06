@@ -14,15 +14,12 @@ export const Container = styled.div.attrs(props => ({
     display: none;
   }
 
-  h1 {
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    svg {
-      margin-bottom: 10px;
-    }
+  p {
+    color: #27496d;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 2em;
   }
 `;
 
@@ -36,14 +33,6 @@ export const HeroCard = styled.form`
     border-radius: 8px;
     margin-bottom: 20px;
   }
-
-  p {
-    color: #7159c1;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 20px;
-    font-size: 16px;
-  }
 `;
 
 export const SubmitButton = styled.button`
@@ -51,7 +40,7 @@ export const SubmitButton = styled.button`
   text-align: center;
   text-decoration: none;
   border: 0;
-  background-color: #7159c1;
+  background-color: #0c7b93;
   color: #fff;
   padding: 10px 20px;
   border-radius: 8px;
@@ -60,10 +49,10 @@ export const SubmitButton = styled.button`
   margin-top: 20px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  transition: background-color 1s;
+  transition: background-color 0.6s;
 
   &:focus {
-    background-color: #341991;
+    background-color: #142850;
   }
 `;
 
@@ -74,7 +63,7 @@ export const NextButton = styled.button.attrs(props => ({
   text-align: center;
   text-decoration: none;
   border: 0;
-  background-color: #7159c1;
+  background-color: #0c7b93;
   color: #fff;
   padding: 10px 20px;
   border-radius: 8px;
@@ -109,31 +98,32 @@ export const EndGame = styled.div.attrs(props => ({
 
   h1 {
     font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   p {
-    color: #7159c1;
+    color: #27496d;
     text-align: center;
-    font-weight: bold;
-    margin-top: 20px;
-    font-size: 16px;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+
+    span {
+      font-size: 1.3em;
+      font-weight: bold;
+    }
   }
 
   a {
-    width: 100%;
     text-align: center;
     text-decoration: none;
     border: 0;
-    background-color: #7159c1;
+    background-color: #0c7b93;
     color: #fff;
     padding: 10px 20px;
     border-radius: 8px;
     font-size: 16px;
     font-weight: bold;
-    margin-top: 40px;
+    margin-top: 20px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     cursor: pointer;
   }

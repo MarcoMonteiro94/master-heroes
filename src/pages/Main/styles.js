@@ -12,17 +12,36 @@ export const Container = styled.div`
   align-items: center;
 
   h1 {
-    font-size: 20px;
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.3em;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.2em;
     margin-bottom: 20px;
+  }
+
+  span {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0 0 15px 0;
   }
 `;
 
 export const SubmitButton = styled.a`
   text-decoration: none;
   border: 0;
-  background-color: #7159c1;
+  background-color: #0c7b93;
   color: #fff;
   padding: 10px 20px;
+
   border-radius: 8px;
   font-size: 16px;
   font-weight: bold;

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { FaBookOpen } from 'react-icons/fa';
 
 import { loadHeroData } from '../../services/hero';
 import { getRandomItem, shuffle } from '../../utils/common';
@@ -108,10 +107,7 @@ export default class Game extends Component {
     return (
       <>
         <Container hidden={hidden}>
-          <h1>
-            <FaBookOpen />
-            Adivinhe o Super!
-          </h1>
+          <p>SCORE: {pontos}</p>
 
           <HeroCard>
             <img src={correctHero?.images.sm} alt={correctHero?.name} />
@@ -127,17 +123,23 @@ export default class Game extends Component {
             <NextButton disabled={disabled} onClick={this.handleSubmit}>
               Próximo!
             </NextButton>
-            <p>Pontos: {pontos}</p>
           </HeroCard>
         </Container>
         <EndGame enable={enable}>
-          <h1>Parabéns!</h1>
-          <p>Você fez {pontos} pontos!</p>
           <p>
-            Você acertou {Math.floor((pontos * 100) / (counter * 20))}% das
+            Você fez
+            <span>
+              <br /> {pontos} pontos <br />
+            </span>{' '}
+            acertando {Math.floor((pontos * 100) / (counter * 20))}% das
             questões!
           </p>
-          <a href="/">Retornar!</a>
+          <p>
+            Obrigado por participar. <br />
+            Deseja voltar e tentar novamente?
+          </p>
+
+          <a href="/">Home</a>
         </EndGame>
       </>
     );
