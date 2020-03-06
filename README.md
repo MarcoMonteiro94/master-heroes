@@ -31,3 +31,7 @@ yarn start
 ---
 
 Made with ♥ by Marco Monteiro :heart: [Get in touch!](https://www.linkedin.com/in/marco-monteiro-5a63b6145/)
+
+[vc]: https://code.visualstudio.com/
+[vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
